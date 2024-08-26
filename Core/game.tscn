@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj5aavagtu006"]
+
+[ext_resource type="PackedScene" uid="uid://dguq63dllpflu" path="res://Characters/player.tscn" id="1_cvkds"]
+[ext_resource type="PackedScene" uid="uid://j0ayvms7c6w3" path="res://environment/pine_tree.tscn" id="2_cb20b"]
+[ext_resource type="PackedScene" uid="uid://drxxccnk4yxg5" path="res://Characters/slime.tscn" id="3_cvcid"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Player" parent="." instance=ExtResource("1_cvkds")]
+position = Vector2(665, 313)
+
+[node name="slime" parent="." instance=ExtResource("3_cvcid")]
+position = Vector2(502, 246)
+
+[node name="slime2" parent="." instance=ExtResource("3_cvcid")]
+position = Vector2(678, 523)
+
+[node name="slime3" parent="." instance=ExtResource("3_cvcid")]
+position = Vector2(1214, 325)
+
+[node name="pine_tree" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(251, 219)
+
+[node name="pine_tree2" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(327, 505)
+
+[node name="pine_tree3" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1481, 522)
+
+[node name="pine_tree4" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1021, 223)
+
+[node name="pine_tree5" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1364, 777)
+
+[node name="pine_tree6" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(478, 641)
+
+[node name="pine_tree7" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(814, 154)
+
+[node name="pine_tree8" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1537, 760)
+
+[node name="pine_tree9" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1684, 732)
+
+[node name="pine_tree10" parent="." instance=ExtResource("2_cb20b")]
+position = Vector2(1335, 596)
